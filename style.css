@@ -1,0 +1,39 @@
+ body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f4f8;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .planet-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fff;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .planet-container img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .planet-info {
+      display: none;
+      max-width: 400px;
+    }
+
+    .planet-container.active .planet-info {
+      display: block;
+    }
+
