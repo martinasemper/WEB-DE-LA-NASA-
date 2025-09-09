@@ -7,17 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <ul>
-     <li><a href="index.html">Inicio</a></li>
+     <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen del Día - NASA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <nav>
+     <img src="nasa-logo.svg" alt="Logo NASA" class="logo">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
       <li><a href="planetas.html">Planetas</a></li>
       <li><a href="misiones.html">Misiones</a></li>
-      <li><a href="imagen del dia.html">Imagen del dia</a></li>
-       <li><a href="date.html">date</a></li>
+      <li><a href="imagen-dia.html">Imagen del Día</a></li>
     </ul>
   </nav>
 
-  <h1>Imagen del dia</h1>
-  <p>Ofrecemos diferentes soluciones adaptadas a tus necesidades.</p>
+  
+  <h1>Imagen del Día</h1>
+
+  <div class="caja">
+    <h2>Título Imagen</h2>
+    <img id="imagenDeldia" src="" alt="imagen del día">
+    <div class="botones">
+      <button id="boton">Mostrar</button>
+    </div>
+  </div>
+
+
+  <div class="caja">
+    <h2>Elegir Fecha</h2>
+    <img id="imagenFecha" alt="imagen del día por fecha">
+    <div class="botones">
+      <input type="date" name="fecha" id="fecha">
+      <button id="botonFecha">Mostrar</button>
+    </div>
+  </div>
+
+  <div class="caja">
+    <h2>Elegir cantidad de fotos</h2>
+    <div class="contenedor-imagen"></div>
+    <div class="botones">
+      <input type="text" name="cantidad" id="cantidad" placeholder="Ingrese un número">
+      <button id="botonCantidad">Mostrar</button>
+    </div>
+  </div>
+
+ 
+  <script src="js.js"></script>
+</body>
+</html>
+
 </body>
 <script src="js.jss"></script>
 </html>

@@ -1,39 +1,181 @@
- body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f0f4f8;
-    }
+/* --- Reset general --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+/* --- Fondo general --- */
+body {
+  background-color: #eef2f6; /* gris claro elegante */
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
 
-    .planet-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #fff;
-      padding: 10px;
-      cursor: pointer;
-    }
+/* --- Barra de navegación --- */
+nav {
+  background: #ffffff;
+  border-bottom: 2px solid #004080; /* azul NASA elegante */
+  padding: 15px 0;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-    .planet-container img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-right: 20px;
-    }
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 
-    .planet-info {
-      display: none;
-      max-width: 400px;
-    }
+nav ul li {
+  margin: 0 20px;
+}
 
-    .planet-container.active .planet-info {
-      display: block;
-    }
+nav ul li a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d62828; /* rojo NASA */
+}
+
+/* --- Títulos --- */
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #004080;
+}
+
+/* ========================================================= */
+/* === PLANETAS === */
+/* (usando tu código base, mejorado con sombras y transiciones) */
+.planet-container {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 15px;
+  cursor: pointer;
+  max-width: 900px;
+  transition: 0.3s;
+}
+
+.planet-container:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.planet-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.planet-info {
+  display: none;
+  max-width: 600px;
+  font-size: 15px;
+}
+
+.planet-container.active .planet-info {
+  display: block;
+}
+
+/* ========================================================= */
+/* === MISIONES === */
+/* Tarjetas una abajo de la otra */
+.mision-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mision {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.mision:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ========================================================= */
+/* === IMAGEN DEL DÍA === */
+/* Tarjetas en columna también */
+.imagen-dia-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.imagen-dia {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.imagen-dia img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+/* Hero imagen */
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.hero img {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Caja de contenido */
+.caja {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  text-align: left;
+}
+
+.caja h1, .caja h2 {
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.caja p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
 
