@@ -27,42 +27,52 @@
       <li><a href="imagen-dia.html">Imagen del Día</a></li>
     </ul>
   </nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NASA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  
-  <h1>Imagen del Día</h1>
+  <h1>NASA</h1>
 
-  <div class="caja">
-    <h2>Título Imagen</h2>
-    <img id="imagenDeldia" src="" alt="imagen del día">
-    <div class="botones">
-      <button id="boton">Mostrar</button>
+  <!-- Imagen del Día -->
+  <section class="caja">
+    <h2>Imagen del Día</h2>
+    <div class="card">
+      <button id="btnDia">Ver Imagen del Día</button>
+      <div class="contenido">
+        <img id="imgDia" width="400">
+        <p id="tituloDia"></p>
+      </div>
     </div>
-  </div>
+  </section>
 
-
-  <div class="caja">
-    <h2>Elegir Fecha</h2>
-    <img id="imagenFecha" alt="imagen del día por fecha">
-    <div class="botones">
-      <input type="date" name="fecha" id="fecha">
-      <button id="botonFecha">Mostrar</button>
+  <!-- Imagen por fecha -->
+  <section class="caja">
+    <h2>Buscar por Fecha</h2>
+    <div class="card">
+      <input type="date" id="fecha">
+      <button id="btnFecha">Buscar</button>
+      <div class="contenido">
+        <img id="imgFecha" width="400">
+        <p id="tituloFecha"></p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="caja">
-    <h2>Elegir cantidad de fotos</h2>
-    <div class="contenedor-imagen"></div>
-    <div class="botones">
-      <input type="text" name="cantidad" id="cantidad" placeholder="Ingrese un número">
-      <button id="botonCantidad">Mostrar</button>
+  <!-- Varias imágenes -->
+  <section class="caja">
+    <h2>Varias Imágenes</h2>
+    <div class="card">
+      <input type="number" id="cantidad" placeholder="Cantidad">
+      <button id="btnCantidad">Mostrar</button>
+      <div id="contenedor" class="grid-cajas"></div>
     </div>
-  </div>
+  </section>
 
- 
   <script src="js.js"></script>
 </body>
-</html>
-
-</body>
-<script src="js.jss"></script>
 </html>
